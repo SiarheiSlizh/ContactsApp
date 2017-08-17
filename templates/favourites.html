@@ -1,0 +1,11 @@
+<ul class="list-inline">
+    <li class="contactSquare col-sm-2" ng-repeat="contact in fav.contacts|filter:contact.isFavorite=true">
+        <div>
+            <h4>{{contact.name}}</h4>
+        </div>
+        {{contact.phoneNumber}}
+    </li>
+</ul>
+<div ng-show="!fav.contacts.length">
+    <h1>No favourite contacts</h1>
+</div>

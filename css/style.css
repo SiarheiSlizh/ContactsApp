@@ -1,0 +1,9 @@
+.contactSquare{
+  border: solid 2px lightblue;
+  margin: 15px;
+  width: 150px;
+}
+
+.error {
+    color: red
+}

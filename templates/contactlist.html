@@ -1,0 +1,26 @@
+<div class="row" style="margin-top:3%">
+    <div class="col-md-6 col-md-offset-3">
+        <table class="table table-striped" style="table-layout:fixed">
+            <thread>
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Date of birth</th>
+                    <th>Phone number</th>
+                    <th>Favourite</th>
+                    <th></th>
+                </tr>
+            </thread>
+            <tbody>
+                <tr ng-repeat="contact in list.contacts | filter:list.name">
+                    <th><input type="checkbox" ng-model="list.selected[contact.id]" value=""></th>
+                    <th>{{contact.name}}</th>
+                    <th>{{contact.dateOfBirth}}</th>
+                    <th>{{contact.phoneNumber}}</th>
+                    <th><input type="checkbox" ng-model="contact.isFavourite"></th>
+                    <th><a href="#/edit/{{contact.id}}"><button class="btn btn-warning btn-xs"><i class="glyphicon glyphicon-pencil"> Edit</i></button></a></th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

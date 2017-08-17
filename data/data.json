@@ -1,0 +1,42 @@
+[
+	{
+		"id": 1,
+		"name": "Sasha",
+		"dateOfBirth": "04/11/1989",
+		"phoneNumber": "25-6402204",
+		"gender": "male",
+        "relationship": "Work",
+        "description": "",
+        "isFavourite": true
+	},
+	{
+		"id": 2,
+		"name": "Elena",
+		"dateOfBirth": "11/10/1994",
+		"phoneNumber": "29-4890983",
+		"gender": "female",
+        "relationship": "Home",
+        "description": "",
+        "isFavourite": false
+	},
+	{
+		"id": 3,
+		"name": "Yaroslav",
+		"dateOfBirth": "01/08/1992",
+		"phoneNumber": "29-4431234",
+		"gender": "male",
+        "relationship": "Other",
+        "description": "",
+        "isFavourite": false
+	},
+	{
+		"id": 4,
+		"name": "John",
+		"dateOfBirth": "18/09/1993",
+		"phoneNumber": "25-8766534",
+		"gender": "male",
+        "relationship": "Home",
+        "description": "",
+        "isFavourite": true
+	}
+]

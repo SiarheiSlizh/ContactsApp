@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Одностраничное приложение</title>
+
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/ngstorage/ngStorage.min.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+    
+    <script src="app.js"></script>
+    <script src="app.config.js"></script>
+    
+    <script src="components/favourites.js"></script>
+    <script src="components/search.js"></script>
+    <script src="components/contactlist.js"></script>
+    <script src="components/table-buttons.js"></script>
+    <script src="components/edit.js"></script>
+    <script src="components/common.js"></script>
+
+    <script src="services/contactService.js"></script>      
+</head>
+<body ng-app="app">
+    <div class="container">
+            <div class="row" style="margin-top:5%">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="btn-group">
+                        <a href="#/"><button type="button" class="btn btn-info btn-lg" >ALL CONTACTS</button></a>
+                        <a href="#/favourites"><button type="button" class="btn btn-info btn-lg">FAVOURITES</button></a>
+                    </div>
+                </div>
+            </div>
+
+    <div class="row">
+        <div ng-view>
+            
+        </div>
+    </div>
+</div>
+</body>
+</html>
